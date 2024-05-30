@@ -117,7 +117,7 @@ class Actions extends StatelessWidget {
 }
 
 class Background extends StatelessWidget {
-  const Background({Key? key}) : super(key: key);
+  const Background({super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
