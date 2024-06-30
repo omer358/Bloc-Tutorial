@@ -7,9 +7,6 @@ import 'package:flutter_weather/theme/theme.dart';
 import 'package:flutter_weather/weather/weather.dart';
 import 'package:weather_repository/weather_repository.dart';
 
-import '../../theme/cubit/theme_cubit.dart';
-import '../cubit/weather_cubit.dart';
-
 class WeatherPage extends StatelessWidget {
   const WeatherPage({super.key});
 
