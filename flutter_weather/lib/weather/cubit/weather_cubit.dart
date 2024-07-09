@@ -41,7 +41,7 @@ class WeatherCubit extends HydratedCubit<WeatherState> {
     }
   }
 
-  Future<void> refreshWeather() async {
+  Future<void> refreshWeather() async {bn
     if (!state.status.isSuccess) return;
     if (state.weather == Weather.empty) return;
     try {
