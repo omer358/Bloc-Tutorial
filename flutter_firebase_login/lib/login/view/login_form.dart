@@ -64,7 +64,7 @@ class _EmailInput extends StatelessWidget {
             labelText: 'email',
             helperText: '',
             errorText:
-            state.email.displayError != null ? 'invalid email' : null,
+                state.email.displayError != null ? 'invalid email' : null,
           ),
         );
       },
@@ -87,7 +87,7 @@ class _PasswordInput extends StatelessWidget {
             labelText: 'password',
             helperText: '',
             errorText:
-            state.password.displayError != null ? 'invalid password' : null,
+                state.password.displayError != null ? 'invalid password' : null,
           ),
         );
       },
@@ -103,18 +103,18 @@ class _LoginButton extends StatelessWidget {
         return state.status.isInProgress
             ? const CircularProgressIndicator()
             : ElevatedButton(
-          key: const Key('loginForm_continue_raisedButton'),
-          style: ElevatedButton.styleFrom(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
-            ),
-            backgroundColor: const Color(0xFFFFD600),
-          ),
-          onPressed: state.isValid
-              ? () => context.read<LoginCubit>().logInWithCredentials()
-              : null,
-          child: const Text('LOGIN'),
-        );
+                key: const Key('loginForm_continue_raisedButton'),
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  backgroundColor: const Color(0xFFFFD600),
+                ),
+                onPressed: state.isValid
+                    ? () => context.read<LoginCubit>().logInWithCredentials()
+                    : null,
+                child: const Text('LOGIN'),
+              );
       },
     );
   }
