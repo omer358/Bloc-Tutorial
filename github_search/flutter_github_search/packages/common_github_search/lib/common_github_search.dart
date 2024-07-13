@@ -2,3 +2,4 @@
 library;
 
 export 'src/common_github_search.dart';
+export 'src/models/models.dart';
